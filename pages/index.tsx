@@ -30,9 +30,58 @@ export default function Home() {
       </div>
       <div className={styles.messages}>
         <div className={styles.sentMessage}>I need a car!</div>
-        <div className={styles.recievedMessage}>Gotcha.</div>
         <div className={styles.recievedMessage}>
-          We have a number of models. Any preference?
+          <svg
+            className={styles.receivedMessageAvatar}
+            width="44"
+            height="44"
+            viewBox="0 0 44 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="0.5"
+              y="0.5"
+              width="43"
+              height="43"
+              rx="21.5"
+              fill="white"
+            />
+            <path
+              d="M22 22C25.3141 22 28 19.3136 28 16C28 12.6864 25.3141 10 22 10C18.6859 10 16 12.6864 16 16C16 19.3136 18.6859 22 22 22ZM22 11.5C24.4816 11.5 26.5 13.5184 26.5 16C26.5 18.4811 24.4816 20.5 22 20.5C19.5184 20.5 17.5 18.4797 17.5 16C17.5 13.5184 19.5203 11.5 22 11.5ZM24.3766 24.25H19.6234C15.138 24.25 11.5 27.8875 11.5 32.3734C11.5 33.2706 12.2275 33.9986 13.1247 33.9986H30.8762C31.7734 34 32.5 33.2734 32.5 32.3734C32.5 27.8875 28.8625 24.25 24.3766 24.25ZM30.8734 32.5H13.1247C13.0562 32.5 13 32.4438 13 32.3734C13 28.7219 15.9719 25.75 19.6234 25.75H24.3719C28.0281 25.75 31 28.7219 31 32.3734C31 32.4438 30.9437 32.5 30.8734 32.5Z"
+              fill="#212121"
+            />
+            <rect
+              x="0.5"
+              y="0.5"
+              width="43"
+              height="43"
+              rx="21.5"
+              stroke="#F5F5F5"
+            />
+          </svg>
+          <p className={styles.recievedMessageText}>Gotcha.</p>
+        </div>
+        <div className={styles.recievedMessage}>
+          <svg
+            className={styles.receivedMessageAvatar}
+            width="44"
+            height="44"
+            viewBox="0 0 44 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="44" height="44" rx="22" fill="#f2f2f2" />
+            <path
+              d="M22 22C26.4187 22 30 18.4181 30 14C30 9.58188 26.4187 6 22 6C17.5813 6 14 9.58188 14 14C14 18.4181 17.5813 22 22 22ZM22 8C25.3087 8 28 10.6913 28 14C28 17.3081 25.3087 20 22 20C18.6913 20 16 17.3063 16 14C16 10.6913 18.6937 8 22 8ZM25.1688 25H18.8313C12.8506 25 8 29.85 8 35.8313C8 37.0275 8.97 37.9981 10.1662 37.9981H33.835C35.0312 38 36 37.0313 36 35.8313C36 29.85 31.15 25 25.1688 25ZM33.8312 36H10.1662C10.075 36 10 35.925 10 35.8313C10 30.9625 13.9625 27 18.8313 27H25.1625C30.0375 27 34 30.9625 34 35.8313C34 35.925 33.925 36 33.8312 36Z"
+              fill="#212121"
+            />
+          </svg>
+
+          <p className={styles.recievedMessageText}>
+            We have a number of models. Any preference? Lorem ipsum dolor...
+            etc!
+          </p>
         </div>
         <div className={styles.sentMessage}>
           Whatever fits me and the family

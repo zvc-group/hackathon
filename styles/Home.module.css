@@ -1,8 +1,81 @@
 .container {
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 128px 1fr 64px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "."
+    "."
+    ".";
+  min-height: 100vh;
 }
 
-.main {
+.header {
+  background-color: #f2f2f2;
+  /* clip-path: circle(74px at 10 50%); */
+  flex-direction: column-reverse;
+  display: flex;
+  flex-direction: row;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  gap: 8px;
+}
+
+.sentMessage {
+  width: 80%;
+  background-color: #008678;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 16px;
+  align-self: flex-end;
+}
+.recievedMessage {
+  width: 80%;
+  align-self: flex-start;
+  background-color: #e0e0e0;
+  padding: 1rem;
+  border-radius: 16px;
+}
+
+.messageBox {
+  background-color: #e0e0e0;
+  border-top: 1px solid #dadada;
+  display: flex;
+  flex-direction: row;
+}
+
+.messageBoxInput {
+  background-color: #e0e0e0;
+  height: 64px;
+  font-size: 32px;
+  padding-left: 8px;
+  width: 90%;
+  flex: 1 1 auto;
+}
+
+.messageBoxButton {
+  flex: 0 1 64px;
+}
+
+.backIcon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerText {
+  font-size: 32px;
+  margin-left: 16px;
+}
+
+/* .main {
   min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
@@ -126,4 +199,4 @@
   .logo img {
     filter: invert(1);
   }
-}
+} */
